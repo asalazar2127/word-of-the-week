@@ -17,5 +17,5 @@ The site will be available here: [wordoftheweek.sanguinebio.com](wordoftheweek.s
 ## Run
 
     docker-compose build
-    docker-compose run app node <JavaScript file>
+    docker-compose run --service-ports app node <JavaScript file>
 
