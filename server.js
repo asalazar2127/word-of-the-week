@@ -1,4 +1,10 @@
-console.log("hello");
+var http = require('http');
 
-var num = 1+1;
-console.log("the result is", 1);
+var butthead = function(req,res) {
+	console.log('server hit')
+}
+var server = http.createServer(butthead);
+server.listen(3000);
+console.log('server up and running on 3000 . . .');
+
+
